@@ -9,7 +9,8 @@ export default function fetchCountries(name) {
       }
       return res.json();
     })
-    .then(data => console.log(data));
+    .then(data => console.log(data))
+    .catch(message => console.log(message));
 }
 // const options = {
 //   name,
