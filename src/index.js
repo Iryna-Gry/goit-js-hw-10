@@ -20,6 +20,8 @@ function invokeResponseSet(evt) {
     .catch(error => {
       if (error.status === 404) {
         Notify.failure('Oops, there is no country with that name');
+        countryListRef.innerHTML = '';
+        countryInfoRef.innerHTML = '';
         return;
       }
     });
