@@ -11,10 +11,60 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+img{
+  display: inline;
+  margin: 4px;
+}
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+.country-list{
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+}
+.country-item {
+  display: flex;
+  align-items: center;
+margin: 0;
+border: 1px solid brown;
+}
+.country-item-name{
+display: inline-block;
+margin: 0;
+margin-left: 10px;
+
+}
+.country-item-name--simple {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 22px;
+}
+.country-item-text{
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.country-item-valuetext{
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.country-info{
+margin: 0;
+padding: 15px;
+display: inline-block;
+}
+.image-container {
+display: flex;
+align-items: center;
 }
